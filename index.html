@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les1</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto&family=Rosario:ital,wght@0,300..700;1,300..700&family=Ruslan+Display&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--АДАПТИВ ДО 680 пикс
++ футер прикрепить к низу-->
+
+
+
+    <div class="header">
+
+        <span class="logo__pic"><img src="./img/logo head.png" class="logo__main" alt=" лого"></span>
+
+
+        <ol class="header__list">
+            <a href="#">
+                <li class="header__li li1">Подбор тура</li>
+            </a>
+            <a href="#">
+                <li class="header__li li2">Горящие туры</li>
+            </a>
+            <a href="#">
+                <li class="header__li li3">Страны</li>
+            </a>
+            <a href="#">
+                <li class="header__li li4">Отели</li>
+            </a>
+        </ol>
+
+
+
+        <div class="header__contact">
+            <button type="button" class="header__button">Оставить заявку</button>
+            <a href="#" class="header__pics"><img src="./img/phone" class="header__img" alt="телефон"></a>
+            <a href="#" class="header__pics"><img src="./img/location" class="header__img" alt="гео"></a>
+        </div>
+        <!-- <div class="header__burger_nav"> -->
+        <div class="header__burger">
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+        </div>
+        <!-- <div class="header__burger_content">
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+            </div> -->
+        <!-- </div> -->
+    </div>
+
+
+    <!-- КОНТЕНТ -->
+
+
+    <div class="content">
+        <div class="banner">
+            <h1>Страны</h1>
+            <p class="banner__description">Исследуйте мир: Наши лучшие направления <br>и страны для путешествий</p>
+        </div>
+
+
+
+
+        <div class="content__tours">
+            <ul class="breadcrumbs__list">
+                <li><a href="#">Главная</a></li>
+                <li>Страны</li>
+            </ul>
+
+            <h2 class="content__title">Туры по странам</h2>
+            <div class="content__tour_lists">
+
+
+                <div class="letter letter__a">
+                    <p class="letter__title">А</p>
+                    <div class="letter__list">
+                        <ul class="letter__country">
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/flag.webp" alt="Абхазия">
+                                    <div class="country_desc__text">
+                                        <h3>Абхазия</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/andorra.png" alt="Андорра">
+                                    <div class="country_desc__text">
+                                        <h3>Андорра</h3>
+                                        <p>Виза, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/aruba.png" alt="Аруба">
+                                    <div class="country_desc__text">
+                                        <h3>Аруба</h3>
+                                        <p>Виза, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/armenia.png" alt="Армения">
+                                    <div class="country_desc__text">
+                                        <h3>Армения</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="letter letter__b">
+                    <p class="letter__title">Б</p>
+                    <div class="letter__list">
+                        <ul class="letter__country">
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/brazile.png" alt="Бразилия">
+                                    <div class="country_desc__text">
+                                        <h3>Бразилия</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/belgia.png" alt="Бельгия">
+                                    <div class="country_desc__text">
+                                        <h3>Бельгия</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="letter letter__v">
+                    <p class="letter__title">в</p>
+                    <div class="letter__list">
+                        <ul class="letter__country">
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/vengria.png" alt="Венгрия">
+                                    <div class="country_desc__text">
+                                        <h3>Венгрия</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/vietnam.png" alt="Вьетнам">
+                                    <div class="country_desc__text">
+                                        <h3>Вьетнам</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/venes.png" alt="Венесуэла">
+                                    <div class="country_desc__text">
+                                        <h3>Венесуэла</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="letter letter__i">
+                    <p class="letter__title">и</p>
+                    <div class="letter__list">
+                        <ul class="letter__country">
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/israil.png" alt="Израиль">
+                                    <div class="country_desc__text">
+                                        <h3>Израиль</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/spain.png" alt="Испания">
+                                    <div class="country_desc__text">
+                                        <h3>Испания</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/italy.png" alt="Италия">
+                                    <div class="country_desc__text">
+                                        <h3>Италия</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="letter letter__k">
+                    <p class="letter__title">к</p>
+                    <div class="letter__list">
+                        <ul class="letter__country">
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/katar.png" alt="Катар">
+                                    <div class="country_desc__text">
+                                        <h3>Катар</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/kipr.png" alt="Кипр">
+                                    <div class="country_desc__text">
+                                        <h3>Кипр</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/china.png" alt="Китай">
+                                    <div class="country_desc__text">
+                                        <h3>Китай</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/costa.png" alt="Коста-Рика">
+                                    <div class="country_desc__text">
+                                        <h3>Коста-Рика</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/cuba.png" alt="Куба">
+                                    <div class="country_desc__text">
+                                        <h3>Куба</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="letter letter__n">
+                    <p class="letter__title">н</p>
+                    <div class="letter__list">
+                        <ul class="letter__country">
+
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/nepal.png" alt="Непал">
+                                    <div class="country_desc__text">
+                                        <h3>Непал</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/netherland.png" alt="Нидерланды">
+                                    <div class="country_desc__text">
+                                        <h3>Нидерланды</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="letter letter__p">
+                    <p class="letter__title">п</p>
+                    <div class="letter__list">
+                        <ul class="letter__country">
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/panama.png" alt="Панама">
+                                    <div class="country_desc__text">
+                                        <h3>Панама</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/peru.png" alt="Перу">
+                                    <div class="country_desc__text">
+                                        <h3>Перу</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/portugalia.png" alt="Португалия">
+                                    <div class="country_desc__text">
+                                        <h3>Португалия</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="letter letter__s">
+                    <p class="letter__title">с</p>
+                    <div class="letter__list">
+                        <ul class="letter__country">
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/aravia.png" alt="Саудовская аравия">
+                                    <div class="country_desc__text">
+                                        <h3>Саудовская аравия</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/serbia.png" alt="Сербия">
+                                    <div class="country_desc__text">
+                                        <h3>Сербия</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/singapoor.png" alt="Сингапур">
+                                    <div class="country_desc__text">
+                                        <h3>Сингапур</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="letter letter__t">
+                    <p class="letter__title">т</p>
+                    <div class="letter__list">
+                        <ul class="letter__country">
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/thailand.png" alt="Таиланд">
+                                    <div class="country_desc__text">
+                                        <h3>Таиланд</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/tunis.png" alt="Тунис">
+                                    <div class="country_desc__text">
+                                        <h3>Тунис</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="country_desc">
+                                    <img src="./img/turkish.png" alt="Турция">
+                                    <div class="country_desc__text">
+                                        <h3>Турция</h3>
+                                        <p>Без виз, без сертификата</p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer__about">
+            <span class="logo__pic"><img src="./img/logo foot.png" class="logo__main" alt=" лого"></span>
+            <div class="separator separator_mobile"></div>
+            <div class="footer__contact">
+                <p class="footer__desc">Узнавайте о горящих <br class="mobile mobile_br"> турах первыми
+                </p>
+                <div class="footer__mail_container">
+                    <img src="./img/mailIcon.png" class="footer__input_icon--left" alt="">
+                    <input type="email" class="footer_email" placeholder="Введите почту">
+                    <button class="footer__mail_submit">
+                        <img src="./img/iconsubmit.png" class="footer__input_icon--right" alt=""></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="footer__nav">
+            <ul>
+                <!-- настрройки шрифта не те -->
+                <a href="#">
+                    <li>Подбор тура</li>
+                </a>
+
+                <a href="#">
+                    <li>горящие туры</li>
+                </a>
+                <a href="#">
+                    <li>страны и отели</li>
+                </a>
+                <a href="#">
+                    <li>Priority</li>
+                </a>
+                <a href="#">
+                    <li>оплата</li>
+                </a>
+                <a href="#">
+                    <li>отзывы</li>
+                </a>
+                <a href="#">
+                    <li>о нас</li>
+                </a>
+                <a href="#">
+                    <li>контакты</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="social">
+            <ul>
+
+                <a href="#">
+                    <li><img src="./img/tg.png" alt="телеграмм"></li>
+                </a>
+                <a href="#">
+                    <li><img src="./img/whats" alt="ватсап"></li>
+                </a>
+                <a href="#">
+                    <li><img src="./img/ok" alt="одноклассники"></li>
+                </a>
+                <a href="#">
+                    <li><img src="./img/vk" alt="вк"></li>
+                </a>
+            </ul>
+            <div class="separator separator_mobile"></div>
+            <p>2023 © Anex Tour - Туристическая компания</p>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

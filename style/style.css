@@ -1,0 +1,1782 @@
+* {
+
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+
+}
+
+.header {
+  width: 1107px;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+.logo__pic {
+  width: 159px;
+  min-width: 159px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
+
+.header__list {
+  display: inline-flex;
+  justify-content: space-evenly;
+  min-width: 450px;
+
+
+
+
+
+}
+
+.header__list a {
+  text-decoration: none;
+}
+
+.header__list li:hover {
+
+
+  color: #EC1C24;
+
+
+}
+
+.header__list li {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+
+.header__contact {
+  display: flex;
+  align-items: center;
+
+  min-width: 320px;
+  justify-content: space-evenly;
+  border-right: 1px solid rgb(124, 17, 17);
+}
+
+.header__button {
+  border: 1px solid #6A6A6A;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+
+  width: 162px;
+  height: 39px;
+
+
+
+
+}
+
+.header__pics {
+  min-width: 26px;
+  width: 26px;
+}
+
+/* .header__burger_nav {
+  position: relative;
+  /* Важно для позиционирования выпадающего списка 
+  display: inline-block;} 
+  /* Чтобы контейнер занимал место */
+
+
+.header__burger {
+
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 7.5px;
+  cursor: pointer;
+  /* Делаем бургер кликабельным */
+
+}
+
+/* .header__burger_content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;}
+  /* Размещаем список справа от бургера (можно изменить) */
+
+
+.header__burger_content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* .header__burger_nav:hover .header__burger_content {
+  display: block;}
+  /* Показываем список при наведении на контейнер */
+
+.burger__item {
+  background-color: black;
+  width: 41px;
+  height: 1px;
+}
+
+/* КОНТЕНТ */
+
+.content__tours {
+  display: flex;
+  flex-direction: column;
+
+  width: auto;
+  gap: 46px;
+
+
+
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+
+  flex: 1;
+
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.438)),
+    url("banner.jpg") center/cover;
+  background-size: 100%;
+  background-position: 50% 40%;
+  height: 385px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 135px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+
+}
+
+
+.banner__description {
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* белый */
+  color: #FFFFFF;
+
+
+}
+
+/* ОСНОВНОЙ КОНТЕНТ */
+
+.breadcrumbs__list {
+  display: flex;
+  list-style: none;
+  gap: 6px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+
+  color: #1C1C1C;
+
+
+
+}
+
+.breadcrumbs__list a {
+  text-decoration: none;
+  color: rgb(133, 132, 132);
+}
+
+.breadcrumbs__list li:first-child:after {
+  content: "";
+  content: " /";
+  color: rgb(133, 132, 132);
+}
+
+.content__title {
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  /* черный */
+  color: #1C1C1C;
+
+
+
+
+}
+
+/* СПИСОК */
+.letter__title {
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.content__tour_lists {
+
+  display: flex;
+  flex-direction: column;
+  gap: 52px 60px;
+  height: 850px;
+
+  flex-wrap: wrap;
+
+
+  flex: 1 1 auto;
+  padding-left: 34px;
+}
+
+.letter {
+  display: flex;
+  gap: 7px;
+}
+
+.letter__title {
+  color: #D4D4D4;
+}
+
+.letter__country {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.letter__country li {
+  background-color: rgb(245, 245, 245);
+  border-radius: 30px;
+
+}
+
+.header__li {
+  list-style: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+}
+
+.country_desc img {
+
+  border-radius: 50px;
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+
+.country_desc {
+  display: flex;
+  padding: 10px 27px 8px 10px;
+  width: auto;
+  height: auto;
+  gap: 13px;
+
+
+}
+
+.country_desc__text h3 {
+
+  line-height: 100%;
+  letter-spacing: 0;
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+
+
+
+
+}
+
+.country_desc__text p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* серый текст 2 */
+  color: #585858;
+
+
+}
+
+.country_desc__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 50px 0;
+
+  background: #222222;
+  border-radius: 30px 30px 0px 0px;
+
+}
+
+.footer__about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1120px;
+  align-items: center;
+
+}
+
+.footer__nav li:hover {
+  color: #EC1C24;
+
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 21px;
+  align-items: center;
+  width: 410px;
+
+
+}
+
+.footer__mail_container {
+  display: flex;
+  align-items: center;
+  width: 238px;
+  border: 1px solid rgb(255, 255, 255);
+  height: 38px;
+
+  border-radius: 30px;
+}
+
+.footer_email {
+  all: unset;
+  text-align: start;
+  color: white;
+  background-color: transparent;
+  width: 160px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+}
+
+.footer_email::placeholder {
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #737373;
+
+
+}
+
+/* Значки внутри input, второй значок выходит за пределы,
+ поэтому уменьшаю ширину input чтобы он не вытеснял второй значок*/
+
+.footer__input_icon--left {
+  padding: 0px 5px 0px 17px;
+  height: 24px;
+  width: 22.47px;
+}
+
+.footer__input_icon--right {}
+
+.footer__mail_submit {
+  all: unset;
+  cursor: pointer;
+  padding: 0px 15px 0px 5px;
+  height: 15px;
+  width: 15px;
+
+}
+
+
+.footer__desc {
+
+
+  vertical-align: middle;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+
+  /* White */
+  color: #FFFFFF;
+
+
+
+
+
+}
+
+.separator_mobile {
+  display: none;
+
+}
+
+.separator {
+  width: 1120px;
+  height: 1px;
+  background-color: #585858;
+}
+
+.footer__nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1120px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  /* белый */
+  color: #FFFFFF;
+
+
+}
+
+.footer__nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer__nav li {
+
+  font-family: "Roboto;", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  /* белый */
+  color: #FFFFFF;
+
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.social ul {
+  display: flex;
+  gap: 43px;
+}
+
+
+.social li {
+  width: 32px;
+  height: 32px;
+
+}
+
+.social img {
+  border-radius: 50%;
+}
+
+.social p {
+  /* 2023 © Anex Tour - Туристическая компания */
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  color: #525252;
+
+
+}
+
+.mobile {
+  display: none;
+}
+
+* {
+  font-family: "Roboto;", Arial, sans-serif;
+}
+
+
+@media (max-width: 846px) {
+  .mobile {
+    display: inline;
+  }
+
+  /* ! МОБИЛЬНАЯ ВЕРСИЯ */
+  /*  стили для экранов шириной 680 пикселей и менее */
+  body {
+    background-color: #FFFFFF;
+  }
+
+  .header {
+
+
+    width: 87%;
+    flex: 0 1 auto;
+
+
+
+
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .header__contact {
+    display: none;
+    align-items: center;
+    min-width: 320px;
+    justify-content: space-evenly;
+    border-right: 1px solid rgb(124, 17, 17);
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__burger {
+
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 7.5px;
+    /* cursor: pointer; */
+    /* Делаем бургер кликабельным */
+
+  }
+
+  h1 {
+
+    /* страны */
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 63px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* белый */
+    color: #FFFFFF;
+
+
+  }
+
+  .banner__description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* белый */
+    color: #FFFFFF;
+
+
+  }
+
+  .breadcrumbs__list {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1C1C1C;
+    padding-left: 30px;
+  }
+
+  .breadcrumbs__list a {
+    text-decoration: none;
+    color: rgb(133, 132, 132);
+  }
+
+  .breadcrumbs__list li:first-child:after {
+    content: "";
+    content: " /";
+    color: rgb(133, 132, 132);
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+    flex: 1;
+  }
+
+  .content__title {
+    font-size: 44px;
+
+    /* моб заголовок 1 */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    text-transform: uppercase;
+    padding-left: 30px;
+    /* черный */
+    color: #1C1C1C;
+
+
+
+
+
+  }
+
+  /* СПИСОК */
+  .letter__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  .content__tour_lists {
+
+    display: flex;
+    flex-direction: column;
+    gap: 52px 60px;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    align-items: center;
+    padding-left: 0px;
+    margin-bottom: 80px;
+  }
+
+
+  .letter {
+    display: flex;
+    gap: 7px;
+  }
+
+  .letter__title {
+    color: #D4D4D4;
+  }
+
+  .letter__country {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .letter__country li {
+    background-color: rgb(245, 245, 245);
+    border-radius: 30px;
+
+  }
+
+  .header__li {
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+
+  ul {
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+  }
+
+  .country_desc img {
+
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+  }
+
+  .country_desc {
+    display: flex;
+    padding: 10px 15px 8px 10px;
+    width: auto;
+    height: auto;
+    gap: 13px;
+
+
+  }
+
+  .country_desc__text h3 {
+
+    line-height: 100%;
+    letter-spacing: 0;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+
+
+
+
+  }
+
+  .country_desc__text p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* серый текст 2 */
+    color: #585858;
+
+
+  }
+
+  .country_desc__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content__tours {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    width: 100%;
+    gap: 46px;
+
+
+
+  }
+
+
+
+  /* FOOTER */
+  .footer {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+
+    background: #222222;
+    padding: 50px 0;
+
+    border-radius: 30px 30px 0px 0px;
+
+  }
+
+  .footer__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    gap: 40px;
+    align-items: center;
+
+  }
+
+  .footer__nav li:hover {
+    color: #EC1C24;
+
+  }
+
+  .footer__contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 21px;
+    align-items: center;
+    width: auto;
+
+
+
+  }
+
+  .footer__mail_container {
+    display: flex;
+    align-items: center;
+    width: 238px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 38px;
+
+    border-radius: 30px;
+  }
+
+  .footer_email {
+    all: unset;
+    text-align: start;
+    color: white;
+    background-color: transparent;
+    width: 160px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+  }
+
+  .footer_email::placeholder {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #737373;
+
+
+  }
+
+  /* Значки внутри input, второй значок выходит за пределы,
+ поэтому уменьшаю ширину input чтобы он не вытеснял второй значок*/
+
+  .footer__input_icon--left {
+    padding: 0px 5px 0px 17px;
+    height: 24px;
+    width: 22.47px;
+  }
+
+  .footer__input_icon--right {}
+
+  .footer__mail_submit {
+    all: unset;
+    padding: 0px 15px 0px 5px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+  }
+
+
+  .footer__desc {
+
+
+    vertical-align: middle;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    text-align: center;
+    /* White */
+    color: #FFFFFF;
+  }
+
+
+  .separator {
+    max-width: 300px;
+    width: 80vw;
+    height: 1px;
+    background-color: #585858;
+  }
+
+  .separator_mobile {
+    display: block;
+    max-width: 300px;
+    width: 80vw;
+  }
+
+  .footer__nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+    height: 98px;
+    gap: 14px 70px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    /* белый */
+    color: #FFFFFF;
+
+
+  }
+
+  .footer__nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .footer__nav li {
+
+    font-family: "Roboto;", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    /* белый */
+    color: #FFFFFF;
+
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .social ul {
+    display: flex;
+    gap: 43px;
+  }
+
+
+  .social li {
+    width: 32px;
+    height: 32px;
+
+  }
+
+  .social img {
+    border-radius: 50%;
+  }
+
+  .social p {
+    /* 2023 © Anex Tour - Туристическая компания */
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    color: #525252;
+
+
+  }
+
+}
+
+/* ! АДАПТИВ 1135 пискелей */
+@media (max-width: 1135px) and (min-width:850px) {
+
+  * {
+
+    margin: 0;
+    padding: 0;
+  }
+
+
+  body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+  }
+
+  .header {
+    max-width: 1024px;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 90%;
+  }
+
+
+
+  .logo__pic {
+    width: 159px;
+    min-width: 159px;
+
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+
+
+
+  .header__list {
+    display: inline-flex;
+    justify-content: space-evenly;
+    min-width: 246px;
+    /* Подбор тура */
+
+
+
+  }
+
+  .header__list a {
+    text-decoration: none;
+  }
+
+  .header__list li:hover {
+
+
+    color: #EC1C24;
+
+
+  }
+
+  .header__list li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+  }
+
+  .header__list .li3,
+  .header__list .li4 {
+    display: none;
+  }
+
+
+  .header__contact {
+    display: flex;
+    align-items: center;
+
+    min-width: 320px;
+    justify-content: space-evenly;
+    border-right: 1px solid rgb(124, 17, 17);
+  }
+
+  .header__button {
+    border: 1px solid #6A6A6A;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+
+    width: 162px;
+    height: 39px;
+
+
+
+
+  }
+
+  .header__pics {
+    min-width: 26px;
+    width: 26px;
+  }
+
+  /* .header__burger_nav {
+  position: relative;
+  /* Важно для позиционирования выпадающего списка 
+  display: inline-block;} 
+  /* Чтобы контейнер занимал место */
+
+
+  .header__burger {
+
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 7.5px;
+    /* cursor: pointer; */
+    /* Делаем бургер кликабельным */
+
+    padding-left: 24px;
+  }
+
+  /* .header__burger_content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;}
+  /* Размещаем список справа от бургера (можно изменить) */
+
+
+  .header__burger_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* .header__burger_nav:hover .header__burger_content {
+  display: block;}
+  /* Показываем список при наведении на контейнер */
+
+  .burger__item {
+    background-color: black;
+    width: 41px;
+    height: 1px;
+  }
+
+  /* КОНТЕНТ */
+
+  .content__tours {
+    display: flex;
+    flex-direction: column;
+
+    width: 832px;
+    gap: 46px;
+
+
+
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+
+    flex: 1;
+
+  }
+
+  .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.438)),
+      url("banner.jpg") center/cover;
+    background-size: 100%;
+    background-position: 50% 40%;
+    height: 385px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+  }
+
+  h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 135px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+
+  }
+
+
+  .banner__description {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* белый */
+    color: #FFFFFF;
+
+
+  }
+
+  /* ОСНОВНОЙ КОНТЕНТ */
+
+  .breadcrumbs__list {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+
+    color: #1C1C1C;
+
+
+
+  }
+
+  .breadcrumbs__list a {
+    text-decoration: none;
+    color: rgb(133, 132, 132);
+  }
+
+  .breadcrumbs__list li:first-child:after {
+    content: "";
+    content: " /";
+    color: rgb(133, 132, 132);
+  }
+
+  .content__title {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    /* черный */
+    color: #1C1C1C;
+
+
+
+
+  }
+
+  /* СПИСОК */
+  .letter__title {
+    font-weight: 400;
+    font-size: 84px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  .content__tour_lists {
+
+    display: flex;
+    flex-direction: column;
+    gap: 52px 67px;
+    height: 1300px;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    padding-left: 34px;
+    /* min-width: 803px; */
+    margin-bottom: 100px;
+  }
+
+  .letter {
+    display: flex;
+    gap: 7px;
+  }
+
+  .letter__title {
+    color: #D4D4D4;
+  }
+
+  .letter__country {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .letter__country li {
+    background-color: rgb(245, 245, 245);
+    border-radius: 30px;
+
+  }
+
+  .header__li {
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+
+  ul {
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+  }
+
+  .country_desc img {
+
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+  }
+
+  .country_desc {
+    display: flex;
+    padding: 10px 27px 8px 10px;
+    width: auto;
+    height: auto;
+    gap: 13px;
+
+
+  }
+
+  .country_desc__text h3 {
+
+    line-height: 100%;
+    letter-spacing: 0;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+
+
+
+
+  }
+
+  .country_desc__text p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* серый текст 2 */
+    color: #585858;
+
+
+  }
+
+  .country_desc__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px 0;
+
+    background: #222222;
+    border-radius: 30px 30px 0px 0px;
+
+  }
+
+  .footer__about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+
+  }
+
+  .footer__nav li:hover {
+    color: #EC1C24;
+
+  }
+
+  .footer__contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 21px;
+    align-items: center;
+    width: auto;
+
+
+  }
+
+  .footer__mail_container {
+    display: flex;
+    align-items: center;
+    width: 238px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 38px;
+
+    border-radius: 30px;
+  }
+
+  .footer_email {
+    all: unset;
+    text-align: start;
+    color: white;
+    background-color: transparent;
+    width: 160px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+  }
+
+  .footer_email::placeholder {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #737373;
+
+
+  }
+
+  /* Значки внутри input, второй значок выходит за пределы,
+ поэтому уменьшаю ширину input чтобы он не вытеснял второй значок*/
+
+  .footer__input_icon--left {
+    padding: 0px 5px 0px 17px;
+    height: 24px;
+    width: 22.47px;
+  }
+
+  .footer__input_icon--right {}
+
+  .footer__mail_submit {
+    all: unset;
+    padding: 0px 15px 0px 5px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+  }
+
+
+  .footer__desc {
+
+
+    vertical-align: middle;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+
+    /* White */
+    color: #FFFFFF;
+
+
+
+
+
+  }
+
+  .separator_mobile {
+    display: none;
+  }
+
+  .separator {
+    width: 91vw;
+    height: 1px;
+    background-color: #585858;
+  }
+
+  .footer__nav {
+    width: 91%;
+  }
+
+  .footer__nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    /* белый */
+    color: #FFFFFF;
+
+
+  }
+
+  .footer__nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .footer__nav li {
+
+    font-family: "Roboto;", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    /* белый */
+    color: #FFFFFF;
+
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .social ul {
+    display: flex;
+    gap: 43px;
+  }
+
+
+  .social li {
+    width: 32px;
+    height: 32px;
+
+  }
+
+  .social img {
+    border-radius: 50%;
+  }
+
+  .social p {
+    /* 2023 © Anex Tour - Туристическая компания */
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    color: #525252;
+
+
+  }
+
+  .mobile {
+    display: none;
+  }
+
+
+
+
+
+
+}
